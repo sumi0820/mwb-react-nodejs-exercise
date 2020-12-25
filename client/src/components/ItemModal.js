@@ -23,7 +23,7 @@ const ItemModal = ({ item }) => {
 
   return (
     <>
-      <Button variant="outline-info" onClick={handleShow}>
+      <Button variant="outline-info" onClick={handleShow} className='mt-3'>
         <Container>
           <Row className="d-flex justify-content-between">
             <Col lg={10}>
