@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import axios from "axios";
+import axios from 'axios';
 import { API_URL } from "../config";
 
 export const Context = createContext();
@@ -21,7 +21,6 @@ export const Provider = (props) => {
   }, []);
 
   useEffect(() => {
-    console.log("this is useEffect", cart);
     localStorage.setItem("CartInLocalStorage", cart);
 
     return () => {
@@ -79,7 +78,6 @@ export const Provider = (props) => {
     let itemInLocal = localStorage.getItem("CartInLocalStorage")
       ? localStorage.getItem("CartInLocalStorage").split(",")
       : [];
-    console.log(itemInLocal.length == cart.length);
     if (
       itemInLocal.length == cart.length ||
       (!itemInLocal.length && !cart.length)

@@ -6,7 +6,7 @@ const Navbar = () => {
   const { cart } = useContext(Context);
   const [cartValue, setCart] = cart;
 
-  console.log("cart Val: ", cartValue);
+
   return (
     <Nav className="mt-2">
       <Container className="d-flex justify-content-between align-items-center">

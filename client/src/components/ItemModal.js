@@ -13,17 +13,11 @@ const ItemModal = ({ item }) => {
   const { cart } = useContext(Context);
   const [cartValue, setCart] = cart;
 
-  const { tabCheck } = useContext(Context);
-  const [tabCheckValue, setTabCheck] = tabCheck;
-
-  const { alert } = useContext(Context);
-  const [alertValue, setAlert] = alert;
-
-  const { onAdd, onRemove, onShowAlert, onCloseAlert } = useContext(Context);
+  const { onAdd, onRemove } = useContext(Context);
 
   return (
     <>
-      <Button variant="outline-info" onClick={handleShow} className='mt-3'>
+      <Button variant="outline-info" onClick={handleShow} className="mt-3">
         <Container>
           <Row className="d-flex justify-content-between">
             <Col lg={10}>
@@ -110,8 +104,6 @@ const ItemModal = ({ item }) => {
           </Button>
         </Modal.Footer>
       </Modal>
-
-
     </>
   );
 };

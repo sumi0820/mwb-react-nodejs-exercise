@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import { Button, Modal, Row, Col, Container } from "react-bootstrap";
+import React, { useContext } from "react";
+import { Button, Modal } from "react-bootstrap";
 import { Context } from "./Context";
 
 const Alert = () => {
