@@ -2,6 +2,7 @@
 
 $ git clone https://github.com/sumi0820/mwb-react-nodejs-exercise.git  
 $ cd mwb-react-nodejs-exercise  
+$ cd mwb-react-nodejs-exercise  
 $ docker-compose up --build  
 
 App is running on http://localhost:3000/
@@ -18,7 +19,7 @@ App is running on http://localhost:3000/
 
 
 ## `Frontend part`
-☑ A frontend application should be implemented as a React single-page application. 
+☑ A frontend application should be implemented as a React single-page application.  
 ☑ Feel free to use any frontend framework (bootstrap, material-ui, etc.) - Bootstrap  
 ☑ Demonstrate the ability to manage the global application state.  
 ☑ Common idea is to show a list of devices (phones, tablets, computers, etc).   
