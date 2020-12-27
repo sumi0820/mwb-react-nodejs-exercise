@@ -75,6 +75,7 @@ const ItemModal = ({ item }) => {
                   <>
                     <Button
                       variant="warning"
+                      className="my-2"
                       onClick={() => {
                         onRemove(item._id);
                       }}

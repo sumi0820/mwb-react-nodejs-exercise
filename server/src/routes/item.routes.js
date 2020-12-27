@@ -1,5 +1,4 @@
 const express = require("express");
-const { findById } = require("../models/Item.model");
 const router = express.Router();
 const ItemModel = require("../models/Item.model");
 
