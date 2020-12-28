@@ -10,19 +10,19 @@ export const Provider = (props) => {
   const [cart, setCart] = useState([]);
   const [tabCheck, setTabCheck] = useState(false);
 
-  // Alert
+  // Alert when the user opens multiple tabs and add/remove items
   const [alert, setAlert] = useState(false);
   const handleShowAlert = () => setAlert(true);
   const handleCloseAlert = () => setAlert(false);
   
-
+  // Fetch item from DB
   useEffect(() => {
     fetchItems();
   }, []);
 
+  // Store items in cart in local storage
   useEffect(() => {
     localStorage.setItem("CartInLocalStorage", cart);
-
     return () => {
       localStorage.removeItem("CartInLocalStorage", cart);
     };

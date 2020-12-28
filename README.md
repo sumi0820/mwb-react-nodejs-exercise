@@ -2,7 +2,6 @@
 
 $ git clone https://github.com/sumi0820/mwb-react-nodejs-exercise.git  
 $ cd mwb-react-nodejs-exercise  
-$ cd mwb-react-nodejs-exercise  
 $ docker-compose up --build  
 
 App is running on http://localhost:3000/

@@ -15,7 +15,7 @@ const Alert = () => {
   const { item } = useContext(Context);
   const [itemValue, setItem] = item;
 
-  const { onShowAlert, onCloseAlert } = useContext(Context);
+  const { onCloseAlert } = useContext(Context);
 
   const alertedItem = itemsValue.filter(
     (originalItem) => itemValue == originalItem._id
